@@ -6,7 +6,7 @@ import datetime
 
 strInputDate = input("Enter your year of birth:")
 
-# Var for testing if the user imput is a number
+# Variable for testing if the user input is a number
 
 boolTestDigit = strInputDate.isdigit()
 
@@ -14,13 +14,13 @@ boolTestDigit = strInputDate.isdigit()
 
 while True:
 
-    # if false will print tell user the the input was a letter and not a number
+    # if false will print tell user the the input was a invalid
 
     if boolTestDigit is False:
 
         print("\n")
 
-        print("That is not a number")
+        print("That is an invalid number")
 
         break
 
@@ -28,26 +28,25 @@ while True:
 
     if boolTestDigit is True:
 
-    # Var for turning user input str into a int
+    # Variable for turning user input string into a integer
 
         intUserBirth = int(strInputDate)
 
-    # Var for getting current year on computer
+    # Variable for getting current year on computer
 
         intYear = int(datetime.datetime.now().year)
 
     # Tests if user input is more then the current year if true
-    # Tells user to enter number that is less then the current date
-
+    
         if intUserBirth > intYear:
-
+			# Tells user to enter number that is less then the current date
             print("\n")
 
             print("Plese enter a number that is less then the current date")
 
             break
 
-    #Var sets final print message by subtracting year by user input
+    #Variable sets final print message by subtracting year by user input
 
         intUserAge = intYear - intUserBirth
 
