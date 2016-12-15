@@ -24,22 +24,22 @@ while True:
 
         break
 
-    # if true will enter if block
+        # if true will enter if block
 
     if boolTestDigit is True:
 
-    # Variable for turning user input string into a integer
+        # Variable for turning user input string into a integer
 
         intUserBirth = int(strInputDate)
 
-    # Variable for getting current year on computer
+        # Variable for getting current year on computer
 
         intYear = int(datetime.datetime.now().year)
 
-    # Tests if user input is more then the current year if true
+        # Tests if user input is more then the current year if true
     
         if intUserBirth > intYear:
-			# Tells user to enter number that is less then the current date
+        # Tells user to enter number that is less then the current date
             print("\n")
 
             print("Plese enter a number that is less then the current date")
