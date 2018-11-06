@@ -11,11 +11,12 @@ test_for_digit = user_birth_year.isdigit()
 if test_for_digit is False:
 
     print("That is an invalid number")
-    print("terminating program")
+    print("Terminating program")
     input()
     sys.exit()
 
 elif test_for_digit is True:
 
-    test = get_year - int(user_birth_year)
-    print(test)
+    result = get_year - int(user_birth_year)
+    print(result)
+    input()
